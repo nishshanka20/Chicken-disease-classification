@@ -1,0 +1,17 @@
+tensorflow
+pandas
+dvc
+notebook
+numpy
+matplotlib
+seaborn
+python-box==6.0.2
+pyYAML #to read yaml packages
+tqdm  # to see progress bar
+ensure==1.0.2 # to ensure the type of the variable
+joblib
+types-pyYAML
+scipy
+Flask
+Flask-Cors
+-e . # setup.py will use to make src as a local package.this one use to install setup.py
