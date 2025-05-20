@@ -1,0 +1,467 @@
+[2025-05-14 18:09:42,768: INFO: main: welcome to my custom log]
+[2025-05-19 09:52:54,584: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 09:52:54,609: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 09:52:54,611: ERROR: 2066051859: yaml file is empty]
+Traceback (most recent call last):
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 3, in <module>
+    config=ConfigurationManager()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1805585692.py", line 8, in __init__
+    self.params=read_yaml(params_filepath)
+  File "d:\Anaconda\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-05-19 12:50:46,335: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 12:50:46,338: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 12:50:46,339: ERROR: 2066051859: yaml file is empty]
+Traceback (most recent call last):
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 3, in <module>
+    config=ConfigurationManager()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1805585692.py", line 8, in __init__
+    self.params=read_yaml(params_filepath)
+  File "d:\Anaconda\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-05-19 14:05:51,013: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 14:05:51,014: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 14:05:51,015: ERROR: 2066051859: yaml file is empty]
+Traceback (most recent call last):
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 3, in <module>
+    config=ConfigurationManager()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1805585692.py", line 8, in __init__
+    self.params=read_yaml(params_filepath)
+  File "d:\Anaconda\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-05-19 14:25:17,608: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 14:25:17,610: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 14:25:17,611: ERROR: 1299891667: yaml file is empty]
+Traceback (most recent call last):
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1299891667.py", line 3, in <module>
+    config=ConfigurationManager()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1805585692.py", line 8, in __init__
+    self.params=read_yaml(params_filepath)
+  File "d:\Anaconda\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-05-19 14:25:54,150: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 14:25:54,151: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 14:25:54,152: ERROR: 2066051859: yaml file is empty]
+Traceback (most recent call last):
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 3, in <module>
+    config=ConfigurationManager()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1805585692.py", line 8, in __init__
+    self.params=read_yaml(params_filepath)
+  File "d:\Anaconda\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-05-19 14:27:08,142: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 14:27:08,143: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 14:30:03,120: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 14:30:03,128: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 14:30:03,131: INFO: common: created directory at: artifacts]
+[2025-05-19 14:30:03,132: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 14:30:47,908: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 14:30:47,909: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 14:30:47,910: INFO: common: created directory at: artifacts]
+[2025-05-19 14:30:47,911: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 14:30:47,911: ERROR: 2066051859: "'ConfigBox' object has no attribute 'source_url'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 4, in <module>
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1805585692.py", line 19, in get_data_ingestion_config
+    source_url=config.source_url,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+[2025-05-19 14:51:36,881: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 14:51:36,882: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 14:51:36,883: INFO: common: created directory at: artifacts]
+[2025-05-19 14:51:36,884: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 14:51:36,884: ERROR: 2066051859: "'ConfigBox' object has no attribute 'source_url'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 4, in <module>
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1805585692.py", line 19, in get_data_ingestion_config
+    source_url=config.source_url,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+[2025-05-19 14:52:11,381: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 14:52:11,383: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 14:52:11,384: INFO: common: created directory at: artifacts]
+[2025-05-19 14:52:11,386: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 14:52:41,418: INFO: 517800514: artifacts/data_ingestion/Dataset.7z downloaded with following info:
+Content-Type: text/html; charset=utf-8
+X-GUploader-UploadID: AAO2Vwq5vq9zDuY3GnyEorG5vmb-H-oE6NWDM6hgRhUlMLZLWO8ZYd8WqF6CbDJH1vYM27kgsw85ipU
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+Content-Security-Policy: sandbox allow-scripts allow-forms allow-downloads
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/DriveUntrustedContentHttp/cspreport
+Content-Security-Policy: script-src 'report-sample' 'nonce-0B85csl8YkPuLdq695XdrQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DriveUntrustedContentHttp/cspreport;worker-src 'self'
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 19 May 2025 09:22:40 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Cross-Origin-Opener-Policy: same-origin
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Cross-Origin-Resource-Policy: same-site
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+reporting-endpoints: default="/_/DriveUntrustedContentHttp/web-reports?context=eJzjUtDikmLw1ZBi6PHYxTQBiBXlr7GqAXF-zW3WIiAW4uF48GH1QTaBE117GhmVVJPyC-NTijLLUjNKSgoSCzKLU4vKUovijQyMTA1MDSz0DAzjCwwAz-MdHg"
+Content-Length: 2368
+Server: UploadServer
+Set-Cookie: NID=524=q8QlUd8FoZl5J0zNWXiPq3i3hdJRmvJ8pj4uDkcYE0CfyLW4qWEu7N6AD2vQM3rTJjb5QNhXd2oXIW1nXpgOfrS2taiP6TupRDdE_6F-X4VD5qOQf_cGIjsaDu_7kaoBu1k55DqM5LSVYcrjNbM8meC4yf9hf6wp5CdWr79jYGsSkwzkCmg1zDjDk_Xoh-p-vw; expires=Tue, 18-Nov-2025 09:22:11 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Connection: close
+
+]
+[2025-05-19 14:52:41,446: ERROR: 2066051859: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 7, in <module>
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\517800514.py", line 24, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+  File "d:\Anaconda\envs\chicken\lib\zipfile.py", line 1271, in __init__
+    self._RealGetContents()
+  File "d:\Anaconda\envs\chicken\lib\zipfile.py", line 1338, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-05-19 16:18:32,824: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 16:18:32,827: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 16:18:32,830: INFO: common: created directory at: artifacts]
+[2025-05-19 16:18:32,832: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 16:19:02,650: INFO: 517800514: artifacts/data_ingestion/Dataset.zip downloaded with following info:
+Content-Type: text/html; charset=utf-8
+X-GUploader-UploadID: AAO2VwqKKGg9275fm1Dyd8dW09jTGzxYgHOARyWQOMpKqMfocRciagHt-plwNUn7AAg8fmpUyuSaRzw
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+Content-Security-Policy: sandbox allow-scripts allow-forms allow-downloads
+Content-Security-Policy: script-src 'report-sample' 'nonce-kvy9I1LA-SpusVHVi5CP9g' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DriveUntrustedContentHttp/cspreport;worker-src 'self'
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/DriveUntrustedContentHttp/cspreport
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 19 May 2025 10:49:01 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Cross-Origin-Opener-Policy: same-origin
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Cross-Origin-Resource-Policy: same-site
+reporting-endpoints: default="/_/DriveUntrustedContentHttp/web-reports?context=eJzjUtDikmJw0JBi6PHYxTQBiBXlr7GqAXF-zW3WIiAW4uGYO3PNQTaBB_cONjApqSblF8anFGWWpWaUlBQkFmQWpxaVpRbFGxkYmRqYGljoGRjGFxgAAMFGHOk"
+Content-Length: 2368
+Server: UploadServer
+Set-Cookie: NID=524=Kzjd9wQ25goOem8ifdQY4gaKe_KRG5BfxR4EDhqY4Q3DkfBsqpXnNpmgieJWa9FtM6iqiIHjGMjkKFEisWX4ROb_MYzYkrBSklBUhItp3PCu8DpYppDQyiagXGW5nQuuDqvmnOIn9v0C1cLwarNgi_RzlNHDSJk2eblw_jRXYuHRGoCqfH05HifVsbA_42xBKw; expires=Tue, 18-Nov-2025 10:48:32 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Connection: close
+
+]
+[2025-05-19 16:19:02,674: ERROR: 2066051859: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 7, in <module>
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\517800514.py", line 24, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+  File "d:\Anaconda\envs\chicken\lib\zipfile.py", line 1271, in __init__
+    self._RealGetContents()
+  File "d:\Anaconda\envs\chicken\lib\zipfile.py", line 1338, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-05-19 16:27:08,710: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 16:27:08,711: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 16:27:08,713: INFO: common: created directory at: artifacts]
+[2025-05-19 16:27:08,714: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 16:28:14,834: ERROR: 2066051859: name 'headers' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 6, in <module>
+    data_ingestion.download_file()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\3804411106.py", line 16, in download_file
+    logger.info(f"{filename} downloaded with following info:\n{headers}")
+NameError: name 'headers' is not defined
+[2025-05-19 16:30:33,016: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 16:30:33,017: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 16:30:33,018: INFO: common: created directory at: artifacts]
+[2025-05-19 16:30:33,019: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 16:30:33,020: INFO: 3782338153: File already exists of size: ~ 93793 KB]
+[2025-05-19 16:30:33,035: ERROR: 2066051859: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 7, in <module>
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\3782338153.py", line 29, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+  File "d:\Anaconda\envs\chicken\lib\zipfile.py", line 1271, in __init__
+    self._RealGetContents()
+  File "d:\Anaconda\envs\chicken\lib\zipfile.py", line 1338, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-05-19 16:31:02,459: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 16:31:02,461: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 16:31:02,470: INFO: common: created directory at: artifacts]
+[2025-05-19 16:31:02,471: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 16:31:34,204: INFO: 3782338153: artifacts/data_ingestion/Dataset.zip downloaded successfully]
+[2025-05-19 16:31:34,219: ERROR: 2066051859: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 7, in <module>
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\3782338153.py", line 29, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+  File "d:\Anaconda\envs\chicken\lib\zipfile.py", line 1271, in __init__
+    self._RealGetContents()
+  File "d:\Anaconda\envs\chicken\lib\zipfile.py", line 1338, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-05-19 16:33:43,547: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 16:33:43,548: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 16:33:43,549: INFO: common: created directory at: artifacts]
+[2025-05-19 16:33:43,557: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 16:34:19,266: INFO: 2959821787: artifacts/data_ingestion/Dataset.zip downloaded successfully]
+[2025-05-19 16:34:19,281: ERROR: 2066051859: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 7, in <module>
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2959821787.py", line 30, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+  File "d:\Anaconda\envs\chicken\lib\zipfile.py", line 1271, in __init__
+    self._RealGetContents()
+  File "d:\Anaconda\envs\chicken\lib\zipfile.py", line 1338, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-05-19 16:39:12,216: ERROR: 2066051859: [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 3, in <module>
+    config=ConfigurationManager()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1805585692.py", line 7, in __init__
+    self.config=read_yaml(config_filepath)
+  File "d:\Anaconda\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 37, in read_yaml
+    raise e
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 30, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2025-05-19 16:39:47,616: ERROR: 2066051859: [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 3, in <module>
+    config=ConfigurationManager()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1805585692.py", line 7, in __init__
+    self.config=read_yaml(config_filepath)
+  File "d:\Anaconda\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 37, in read_yaml
+    raise e
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 30, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2025-05-19 16:50:05,077: ERROR: 2066051859: [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 3, in <module>
+    config=ConfigurationManager()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1805585692.py", line 7, in __init__
+    self.config=read_yaml(config_filepath)
+  File "d:\Anaconda\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 37, in read_yaml
+    raise e
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 30, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2025-05-19 16:52:19,797: ERROR: 2066051859: [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\2066051859.py", line 3, in <module>
+    config=ConfigurationManager()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_26544\1805585692.py", line 7, in __init__
+    self.config=read_yaml(config_filepath)
+  File "d:\Anaconda\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 37, in read_yaml
+    raise e
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\utils\common.py", line 30, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2025-05-19 16:55:37,817: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 16:55:37,819: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 16:55:37,821: INFO: common: created directory at: artifacts]
+[2025-05-19 16:55:37,828: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 16:55:37,828: ERROR: 2066051859: name 'DataIngestion' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_19408\2066051859.py", line 5, in <module>
+    data_ingestion=DataIngestion(config=data_ingestion_config)
+NameError: name 'DataIngestion' is not defined
+[2025-05-19 16:56:18,917: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 16:56:18,919: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 16:56:18,920: INFO: common: created directory at: artifacts]
+[2025-05-19 16:56:18,921: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 16:57:24,446: INFO: 19171549: artifacts/data_ingestion/Dataset.zip downloaded successfully]
+[2025-05-19 16:57:24,462: ERROR: 19171549: Downloaded file is not a valid zip file.]
+[2025-05-19 16:57:24,464: ERROR: 2066051859: Downloaded file is not a valid zip file.]
+Traceback (most recent call last):
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_19408\2066051859.py", line 7, in <module>
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Nishashanka\AppData\Local\Temp\ipykernel_19408\19171549.py", line 30, in extract_zip_file
+    raise zipfile.BadZipFile("Downloaded file is not a valid zip file.")
+zipfile.BadZipFile: Downloaded file is not a valid zip file.
+[2025-05-19 17:19:29,621: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-19 17:19:29,623: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 17:19:29,624: INFO: common: created directory at: artifacts]
+[2025-05-19 17:19:29,625: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-19 17:19:39,051: INFO: 19171549: artifacts/data_ingestion/Dataset.zip downloaded successfully]
+[2025-05-19 17:19:41,085: INFO: 19171549: Extracted all files to artifacts/data_ingestion]
+[2025-05-20 08:32:22,837: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-20 08:32:22,847: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-20 08:32:22,855: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-20 08:32:22,857: INFO: common: created directory at: artifacts]
+[2025-05-20 08:32:22,857: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-20 08:32:22,857: ERROR: main: __init__() got an unexpected keyword argument 'data_ingestion_config']
+Traceback (most recent call last):
+  File "main.py", line 8, in <module>
+    data_ingestion_pipeline.main()
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion = DataIngestion(data_ingestion_config=data_ingestion_config)
+TypeError: __init__() got an unexpected keyword argument 'data_ingestion_config'
+[2025-05-20 11:13:03,437: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-20 11:13:03,443: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-20 11:13:03,443: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-20 11:13:03,447: INFO: common: created directory at: artifacts]
+[2025-05-20 11:13:03,448: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-20 11:13:17,845: INFO: data_ingestion: artifacts/data_ingestion/Dataset.zip downloaded successfully]
+[2025-05-20 11:13:20,691: INFO: data_ingestion: Extracted all files to artifacts/data_ingestion]
+[2025-05-20 11:13:20,691: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]

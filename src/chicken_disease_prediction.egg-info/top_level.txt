@@ -1,1 +1,1 @@
-chicken-disease-prediction
+chicken_disease_prediction
