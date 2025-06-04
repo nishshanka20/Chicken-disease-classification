@@ -1,6 +1,7 @@
 from chicken_disease_prediction import logger
 from chicken_disease_prediction.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from chicken_disease_prediction.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
+from chicken_disease_prediction.pipeline.stage_03_training import ModelTrainingPipeline
 
 
 STAGE_NAME = "Data Ingestion stage"
@@ -18,6 +19,16 @@ try:
     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
     prepare_base_model_training_pipeline = PrepareBaseModelTrainingPipeline()
     prepare_base_model_training_pipeline.main()
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<")
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+STAGE_NAME = "Training Stage"
+try:
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    model_trining_pipeline= ModelTrainingPipeline()
+    model_trining_pipeline.main()
     logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<")
 except Exception as e:
     logger.exception(e)
