@@ -1,7 +1,7 @@
 from chicken_disease_prediction.constants import *
 import os
 from chicken_disease_prediction.utils.common import read_yaml,create_directories
-from chicken_disease_prediction.entity.config_entity import (DataIngestionConfig, PrepareBaseModelConfig,PrepareCallbacksConfig,PrepareTrainingConfig)
+from chicken_disease_prediction.entity.config_entity import (DataIngestionConfig, PrepareBaseModelConfig,PrepareCallbacksConfig,PrepareTrainingConfig,EvaluationConfig)
 
 
 class ConfigurationManager:
@@ -84,4 +84,14 @@ class ConfigurationManager:
         
 
         return training_config
+    
+    def get_validation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model=Path(self.config.training.trained_model_path),
+            training_data=Path(self.config.data_ingestion.unzip_dir),
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config
     
