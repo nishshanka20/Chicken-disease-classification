@@ -740,3 +740,378 @@ x====================x]
 [2025-06-07 16:32:24,054: INFO: common: created directory at: artifacts]
 [2025-06-07 16:33:26,080: INFO: common: json file saved at: scores.json]
 [2025-06-07 16:33:26,080: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<]
+[2025-07-19 17:10:44,879: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.10.31.189:80]
+[2025-07-19 17:10:44,879: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-19 17:11:06,847: INFO: _internal: 127.0.0.1 - - [19/Jul/2025 17:11:06] "GET / HTTP/1.1" 200 -]
+[2025-07-19 17:11:53,686: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\losses\losses.py", line 45, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+TypeError: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "D:\myprojects\chicken_disease_classification\chicken-disease-classification\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\pipeline\predict.py", line 14, in predict
+    model=load_model(os.path.join("artifacts","training","trained_model.h5"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 155, in load_model_from_hdf5
+    **saving_utils.compile_args_from_training_config(
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 146, in compile_args_from_training_config
+    loss = _deserialize_nested_config(losses.deserialize, loss_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 205, in _deserialize_nested_config
+    return deserialize_fn(config)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\losses\__init__.py", line 155, in deserialize
+    return serialization_lib.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 581, in deserialize_keras_object
+    return deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 720, in deserialize_keras_object
+    raise TypeError(
+TypeError: <class 'keras.src.losses.losses.CategoricalCrossentropy'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'keras.losses', 'class_name': 'CategoricalCrossentropy', 'config': {'reduction': 'auto', 'name': 'categorical_crossentropy', 'from_logits': False, 'label_smoothing': 0.0, 'axis': -1, 'fn': 'categorical_crossentropy'}, 'registered_name': None}.
+
+Exception encountered: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+[2025-07-19 17:11:53,700: INFO: _internal: 127.0.0.1 - - [19/Jul/2025 17:11:53] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-19 17:13:10,276: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.10.31.189:8080]
+[2025-07-19 17:13:10,276: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-19 17:13:17,048: INFO: _internal: 127.0.0.1 - - [19/Jul/2025 17:13:17] "GET / HTTP/1.1" 200 -]
+[2025-07-19 17:13:33,821: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\losses\losses.py", line 45, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+TypeError: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "D:\myprojects\chicken_disease_classification\chicken-disease-classification\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\pipeline\predict.py", line 14, in predict
+    model=load_model(os.path.join("artifacts","training","trained_model.h5"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 155, in load_model_from_hdf5
+    **saving_utils.compile_args_from_training_config(
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 146, in compile_args_from_training_config
+    loss = _deserialize_nested_config(losses.deserialize, loss_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 205, in _deserialize_nested_config
+    return deserialize_fn(config)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\losses\__init__.py", line 155, in deserialize
+    return serialization_lib.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 581, in deserialize_keras_object
+    return deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 720, in deserialize_keras_object
+    raise TypeError(
+TypeError: <class 'keras.src.losses.losses.CategoricalCrossentropy'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'keras.losses', 'class_name': 'CategoricalCrossentropy', 'config': {'reduction': 'auto', 'name': 'categorical_crossentropy', 'from_logits': False, 'label_smoothing': 0.0, 'axis': -1, 'fn': 'categorical_crossentropy'}, 'registered_name': None}.
+
+Exception encountered: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+[2025-07-19 17:13:33,827: INFO: _internal: 127.0.0.1 - - [19/Jul/2025 17:13:33] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-19 17:15:52,470: INFO: _internal: 127.0.0.1 - - [19/Jul/2025 17:15:52] "GET / HTTP/1.1" 200 -]
+[2025-07-19 17:22:55,579: INFO: stage_04_evaluation: *************]
+[2025-07-19 17:22:55,579: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-07-19 17:22:55,579: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-19 17:22:55,579: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-19 17:22:55,579: INFO: common: created directory at: artifacts]
+[2025-07-19 17:22:55,792: ERROR: stage_04_evaluation: <class 'keras.src.losses.losses.CategoricalCrossentropy'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'keras.losses', 'class_name': 'CategoricalCrossentropy', 'config': {'reduction': 'auto', 'name': 'categorical_crossentropy', 'from_logits': False, 'label_smoothing': 0.0, 'axis': -1, 'fn': 'categorical_crossentropy'}, 'registered_name': None}.
+
+Exception encountered: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn']
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\losses\losses.py", line 45, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+TypeError: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\myprojects\Chicken_disease_classification\Chicken-disease-classification\src\chicken_disease_prediction\pipeline\stage_04_evaluation.py", line 23, in <module>
+    evaluation_pipeline.main()
+  File "D:\myprojects\Chicken_disease_classification\Chicken-disease-classification\src\chicken_disease_prediction\pipeline\stage_04_evaluation.py", line 15, in main
+    evaluation.evaluation()
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\components\evaluation.py", line 43, in evaluation
+    model = self.load_model(self.config.path_of_model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\components\evaluation.py", line 39, in load_model
+    return tf.keras.models.load_model(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 155, in load_model_from_hdf5
+    **saving_utils.compile_args_from_training_config(
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 146, in compile_args_from_training_config
+    loss = _deserialize_nested_config(losses.deserialize, loss_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 205, in _deserialize_nested_config
+    return deserialize_fn(config)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\losses\__init__.py", line 155, in deserialize
+    return serialization_lib.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 581, in deserialize_keras_object
+    return deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 720, in deserialize_keras_object
+    raise TypeError(
+TypeError: <class 'keras.src.losses.losses.CategoricalCrossentropy'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'keras.losses', 'class_name': 'CategoricalCrossentropy', 'config': {'reduction': 'auto', 'name': 'categorical_crossentropy', 'from_logits': False, 'label_smoothing': 0.0, 'axis': -1, 'fn': 'categorical_crossentropy'}, 'registered_name': None}.
+
+Exception encountered: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+[2025-07-19 18:31:26,643: INFO: stage_04_evaluation: *************]
+[2025-07-19 18:31:26,644: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-07-19 18:31:26,646: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-19 18:31:26,647: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-19 18:31:26,647: INFO: common: created directory at: artifacts]
+[2025-07-19 18:31:27,015: ERROR: stage_04_evaluation: <class 'keras.src.losses.losses.CategoricalCrossentropy'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'keras.losses', 'class_name': 'CategoricalCrossentropy', 'config': {'reduction': 'auto', 'name': 'categorical_crossentropy', 'from_logits': False, 'label_smoothing': 0.0, 'axis': -1, 'fn': 'categorical_crossentropy'}, 'registered_name': None}.
+
+Exception encountered: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn']
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\losses\losses.py", line 45, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+TypeError: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\myprojects\Chicken_disease_classification\Chicken-disease-classification\src\chicken_disease_prediction\pipeline\stage_04_evaluation.py", line 23, in <module>
+    evaluation_pipeline.main()
+  File "D:\myprojects\Chicken_disease_classification\Chicken-disease-classification\src\chicken_disease_prediction\pipeline\stage_04_evaluation.py", line 15, in main
+    evaluation.evaluation()
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\components\evaluation.py", line 43, in evaluation
+    model = self.load_model(self.config.path_of_model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\components\evaluation.py", line 39, in load_model
+    return tf.keras.models.load_model(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 155, in load_model_from_hdf5
+    **saving_utils.compile_args_from_training_config(
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 146, in compile_args_from_training_config
+    loss = _deserialize_nested_config(losses.deserialize, loss_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 205, in _deserialize_nested_config
+    return deserialize_fn(config)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\losses\__init__.py", line 155, in deserialize
+    return serialization_lib.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 581, in deserialize_keras_object
+    return deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\saving\serialization_lib.py", line 720, in deserialize_keras_object
+    raise TypeError(
+TypeError: <class 'keras.src.losses.losses.CategoricalCrossentropy'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'keras.losses', 'class_name': 'CategoricalCrossentropy', 'config': {'reduction': 'auto', 'name': 'categorical_crossentropy', 'from_logits': False, 'label_smoothing': 0.0, 'axis': -1, 'fn': 'categorical_crossentropy'}, 'registered_name': None}.
+
+Exception encountered: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+[2025-07-20 10:23:16,922: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-07-20 10:23:16,922: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-20 10:23:16,939: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-20 10:23:16,945: INFO: common: created directory at: artifacts]
+[2025-07-20 10:23:16,945: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-20 10:23:53,115: INFO: data_ingestion: artifacts/data_ingestion/Dataset.zip downloaded successfully]
+[2025-07-20 10:23:54,789: INFO: data_ingestion: Extracted all files to artifacts/data_ingestion]
+[2025-07-20 10:23:54,789: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-07-20 10:23:54,798: INFO: main: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-07-20 10:23:54,798: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-20 10:23:54,798: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-20 10:23:54,798: INFO: common: created directory at: artifacts]
+[2025-07-20 10:23:54,798: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-07-20 10:23:55,312: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-07-20 10:23:55,454: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-07-20 10:23:55,546: INFO: stage_02_prepare_base_model: Prepare Base Model Stage completed successfully.]
+[2025-07-20 10:23:55,546: INFO: main: >>>>>> stage Prepare Base Model Stage completed <<<<<<]
+[2025-07-20 10:23:55,546: INFO: main: >>>>>> stage Training Stage started <<<<<<]
+[2025-07-20 10:23:55,546: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-20 10:23:55,546: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-20 10:23:55,546: INFO: common: created directory at: artifacts]
+[2025-07-20 10:23:55,546: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoints]
+[2025-07-20 10:23:55,546: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-07-20 10:23:55,546: INFO: common: created directory at: artifacts\training]
+[2025-07-20 10:23:55,708: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-20 10:23:58,729: ERROR: main: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "D:\myprojects\Chicken_disease_classification\Chicken-disease-classification\main.py", line 32, in <module>
+    model_trining_pipeline.main()
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\pipeline\stage_03_training.py", line 24, in main
+    training.train(
+  File "d:\myprojects\chicken_disease_classification\chicken-disease-classification\src\chicken_disease_prediction\components\training.py", line 67, in train
+    self.model.fit(
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Anaconda\envs\chicken-env\Lib\site-packages\keras\src\backend\tensorflow\core.py", line 171, in convert_to_numpy
+    return np.array(x)
+           ^^^^^^^^^^^
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-08-02 10:01:41,518: INFO: stage_04_evaluation: *************]
+[2025-08-02 10:01:41,518: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-08-02 10:01:41,555: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 10:01:41,566: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 10:01:41,566: INFO: common: created directory at: artifacts]
+[2025-08-02 10:04:53,319: INFO: common: json file saved at: scores.json]
+[2025-08-02 10:04:53,319: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<]
+[2025-08-03 09:52:53,224: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.153.237:8080]
+[2025-08-03 09:52:53,225: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-08-03 09:53:08,323: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 09:53:08] "GET / HTTP/1.1" 200 -]
+[2025-08-03 09:53:14,517: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\chicken\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anaconda\envs\chicken\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anaconda\envs\chicken\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Anaconda\envs\chicken\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anaconda\envs\chicken\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Anaconda\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\myprojects\Chicken_disease_classification\Chicken-disease-classification\src\chicken_disease_prediction\pipeline\predict.py", line 17, in predict
+    test_image=image.load_img(imagename,target_size=(224,224))
+  File "D:\Anaconda\envs\chicken\lib\site-packages\keras\src\utils\image_utils.py", line 423, in load_img
+    img = pil_image.open(io.BytesIO(f.read()))
+  File "D:\Anaconda\envs\chicken\lib\site-packages\PIL\Image.py", line 3498, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x000001865F1958B0>
+[2025-08-03 09:53:14,579: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 09:53:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-08-03 09:53:31,397: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 09:53:31] "GET / HTTP/1.1" 200 -]
+[2025-08-03 09:54:36,355: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 09:54:36] "POST /predict HTTP/1.1" 200 -]
+[2025-08-03 09:54:59,869: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 09:54:59] "POST /predict HTTP/1.1" 200 -]
+[2025-08-03 09:55:14,849: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 09:55:14] "POST /predict HTTP/1.1" 200 -]
+[2025-08-03 10:05:00,980: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:05:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-08-03 10:08:07,510: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:08:07] "POST /predict HTTP/1.1" 200 -]
+[2025-08-03 10:31:35,146: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.153.237:8080]
+[2025-08-03 10:31:35,146: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-08-03 10:31:40,679: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:31:40] "GET / HTTP/1.1" 200 -]
+[2025-08-03 10:31:40,710: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:31:40] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-08-03 10:31:54,338: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:31:54] "POST /predict HTTP/1.1" 200 -]
+[2025-08-03 10:32:04,970: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:32:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-08-03 10:32:27,381: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:32:27] "GET / HTTP/1.1" 200 -]
+[2025-08-03 10:32:27,415: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:32:27] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-08-03 10:33:06,420: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:33:06] "POST /predict HTTP/1.1" 200 -]
+[2025-08-03 10:41:19,381: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.153.237:5000]
+[2025-08-03 10:41:19,381: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-08-03 10:41:29,674: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:41:29] "[33mGET / HTTP/1.1[0m" 404 -]
+[2025-08-03 10:41:30,306: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:41:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-08-03 10:41:36,658: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:41:36] "[33mGET / HTTP/1.1[0m" 404 -]
+[2025-08-03 10:41:44,503: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:41:44] "[31m[1mGET /predict HTTP/1.1[0m" 405 -]
+[2025-08-03 10:42:22,894: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:42:22] "[33mGET /predict/docs HTTP/1.1[0m" 404 -]
+[2025-08-03 10:42:34,791: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:42:34] "[33mGET /docs HTTP/1.1[0m" 404 -]
+[2025-08-03 10:43:07,007: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.153.237:8080]
+[2025-08-03 10:43:07,007: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-08-03 10:43:13,380: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:43:13] "GET / HTTP/1.1" 200 -]
+[2025-08-03 10:43:21,571: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:43:21] "POST /predict HTTP/1.1" 200 -]
+[2025-08-03 10:45:00,462: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.153.237:8080]
+[2025-08-03 10:45:00,462: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-08-03 10:45:06,780: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:45:06] "GET / HTTP/1.1" 200 -]
+[2025-08-03 10:45:06,828: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:45:06] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-08-03 10:45:26,826: INFO: _internal: 127.0.0.1 - - [03/Aug/2025 10:45:26] "POST /predict HTTP/1.1" 200 -]

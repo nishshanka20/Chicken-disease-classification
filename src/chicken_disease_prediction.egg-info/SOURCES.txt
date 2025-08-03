@@ -17,6 +17,7 @@ src/chicken_disease_prediction/constants/__init__.py
 src/chicken_disease_prediction/entity/__init__.py
 src/chicken_disease_prediction/entity/config_entity.py
 src/chicken_disease_prediction/pipeline/__init__.py
+src/chicken_disease_prediction/pipeline/predict.py
 src/chicken_disease_prediction/pipeline/stage_01_data_ingestion.py
 src/chicken_disease_prediction/pipeline/stage_02_prepare_base_model.py
 src/chicken_disease_prediction/pipeline/stage_03_training.py
